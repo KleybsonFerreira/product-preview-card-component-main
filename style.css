@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(30, 38%, 92%);
+    flex-direction: column;
+   
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    height: 429px;
+    width: 542px;
+
+}
+.container img{
+    width: 281px;
+    height: 431px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto {
+    padding: 15px;
+    text-align: left;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: 15px;
+    font-size: 700;
+    color: hsl(228, 12%, 48%);
+    font-weight: 100;
+    
+}
+.paragrafo {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+}
+.preco {
+    margin: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.novo-preco {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+.antigo-preco {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.btn {
+    width: 100%;
+    padding: 7px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: hsla(158, 86%, 37%, 0.842);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn:hover {
+   background-color: hsl(158, 75%, 40%);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    background-color: hsl(158, 77%, 12%);
+}
+
+.attribution{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Responsivo */
+@media screen and (max-width:620px) {
+    body{
+        height: 107vh;
+    }
+    
+    .container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 582px;
+       width: 334px;
+    }
+
+    .container img{
+        width: 310px;
+        height: 188px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .texto {
+        padding: 23px;
+        text-align: left;
+    }
+    h1 {
+        font-family: 'Fraunces', serif;
+        font-size: 700;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 15px;
+        font-size: 700;
+        color: hsl(228, 12%, 48%);
+        
+    }
+    .paragrafo {
+        font-family: 'Montserrat', sans-serif;
+        margin: 13px 0;
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        line-height: 1.7;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 17px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: hsla(158, 86%, 37%, 0.842);
+        color: hsl(0, 0%, 100%);
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    
+    .btn:hover {
+       background-color: hsl(158, 75%, 40%);
+    }
+    
+    .btn:active {
+        transform: translateY(1px);
+        box-shadow: none;
+        background-color: hsl(158, 77%, 12%);
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
